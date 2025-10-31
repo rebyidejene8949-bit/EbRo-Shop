@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ebro-Shop</title>
+  <style>
+    :root{--primary:#2b7a78;--accent:#f6bc52;--bg:#f7faf9;--card:#ffffff}
+    body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--bg);color:#123}
+    .container{max-width:1000px;margin:30px auto;padding:20px}
+    header{display:flex;align-items:center;gap:15px}
+    .logo{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#145b5a);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 18px;color:#334}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.06)}
+    .two{display:flex;gap:16px;flex-direction:column}
+    .info-list{list-style:none;padding:0;margin:0}
+    .info-list li{padding:8px 0;border-bottom:1px dashed #eee}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--primary);color:#fff;text-decoration:none}
+    footer{text-align:center;margin-top:18px;color:#556}
+    form input, form textarea{width:100%;padding:10px;margin-top:8px;border:1px solid #ddd;border-radius:6px}
+    form button{margin-top:10px}
+    @media(min-width:720px){.grid{grid-template-columns:1fr 380px}.two{flex-direction:column}}
+
+    main{
+      background-image: url('./backgroundImages/f9f3b544-f749-460f-ae40-d784f1e2721a.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">EbRo</div>
+      <div>
+        <h1>EbRo-Shop</h1>
+        <p class="lead">A big shop for food items,hygiene products,shoes and daily things. Friendly staff and good prices.</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>About the Shop</h2>
+        <p>Ebro ሸቀጣሸቀጥ Shop sells many items like shirts, pants, shoes, and accessories. The shop is clean and the workers are helpful. You can come and choose what you want.</p>
+
+        <h3>Service Hours</h3>
+        <ul class="info-list">
+          <li>Open every day: 7:00am — 11:30pm</li>
+          <li>Weekends: same hours</li>
+        </ul>
+
+        <h3>Delivery Service</h3>
+        <p>We offer home delivery in nearby areas. Call or write a message to order. Delivery is fast and safe.</p>
+
+        <h3>Location</h3>
+        <p>Find us opposite Ednamol Square. The shop is easy to find and near the main road.</p>
+
+        <h3>Gallery</h3>
+        <p>(Photos can be added later.)</p>
+      </section>
+
+      <aside class="two">
+        <div class="card">
+          <h3>Quick Info</h3>
+          <ul class="info-list">
+            <li><strong>Name:</strong> Ebro ሸቀጣሸቀጥ Shop</li>
+            <li><strong>Hours:</strong> 8:00 AM — 9:00 PM</li>
+            <li><strong>Delivery:</strong> Yes — nearby areas</li>
+            <li><strong>Location:</strong> Opposite Ednamol Square</li>
+            <li><strong>Phone:</strong> +251 989 498 343</li>
+          </ul>
+          <a class="btn" href="#contact">Contact Us</a>
+        </div>
+
+        <div class="card" id="contact">
+          <h3>Contact / Order</h3>
+      <form action="https://formspree.io/f/xgvplkvz" method="POST">
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Your name" required>
+  
+  <label>Phone or Email</label>
+  <input type="text" name="contactinfo" placeholder="Phone or email" required>
+  
+  <label>Message / Order</label>
+  <textarea name="message" rows="4" placeholder="Write your order or question" required></textarea>
+  
+  <button class="btn" type="submit">Send</button>
+</form>
+          <p id="status" style="margin-top:10px;color:#246;display:none">Message sent. We will call you soon.</p>
+        </div>
+
+        <div class="card">
+          <h3>Map</h3>
+          <p>Opposite Ednamol Square — near the main road. Use a local map app to find exact directions.</p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>© <strong>Ebro ሸቀጣሸቀጥ Shop</strong> — Opposite Ednamol Square • Open daily 8 AM–9 PM</p>
+    </footer>
+  </div>
+
+  <script>
+    function sendMessage(e){
+      e.preventDefault();
+      // Simple demo: show confirmation text
+      document.getElementById('status').style.display = 'block';
+      // Clear the form
+      document.getElementById('name').value = '';
+      document.getElementById('contactinfo').value = '';
+      document.getElementById('message').value = '';
+    }
+  </script>
+</body>
+</html>
+
+
+
+

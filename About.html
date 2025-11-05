@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+  <title>contact-us</title>
+  <style>
+    :root {
+      --cyan: #09af6f;
+      --lime: #d9f200;
+      --muted: #f6f3f3;
+      --card-border: #efebef;
+      --dark-footer: #2f2f2f;
+      --accent: #8b1f3a;
+      --text: #222;
+      --radius: 6px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header.site-header {
+      background: var(--cyan);
+      text-align: center;
+      padding: 26px 16px 44px;
+      position: relative;
+      box-shadow: inset 0 -3px rgba(0, 0, 0, 0.02);
+    }
+
+    header .brand {
+      font-weight: 700;
+      font-size: 32px;
+      color: #fff;
+      margin: 0;
+    }
+
+    nav.main-nav {
+      margin-top: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      font-size: 14px;
+    }
+
+    nav.main-nav a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      opacity: 0.95;
+    }
+
+    
+
+   
+
+    
+
+   
+
+    
+
+   
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    
+
+    .card{
+      width:100%;
+      max-width:720px;
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:28px 32px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+      border:1px solid rgba(12,24,20,0.03);
+    }
+
+    h1.hero{
+      margin:0 0 20px 0;
+      font-size:40px;
+      line-height:1.03;
+      font-weight:800;
+      text-align:center;
+    }
+
+    h2.section{
+      margin:28px 0 12px 0;
+      font-size:26px;
+      font-weight:700;
+    }
+
+    p.lead{
+      color:var(--muted);
+      line-height:1.8;
+      font-size:18px;
+      margin:0 0 18px 0;
+      font-weight:400;
+    }
+
+    .stats{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      margin:18px 0 6px 0;
+    }
+    .stat{
+      background:var(--stat-bg);
+      padding:22px 18px;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      box-shadow:inset 0 1px rgba(0,0,0,0.02);
+    }
+    .stat .num{
+      font-size:36px;
+      font-weight:800;
+      color:var(--accent);
+      margin-bottom:6px;
+    }
+    .stat .label{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:28px;
+      align-items:start;
+    }
+
+    .values .value{
+      margin-bottom:18px;
+    }
+    .values .value h3{
+      margin:0 0 8px 0;
+      font-size:18px;
+      font-weight:800;
+    }
+    .values .value p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    ul.checklist{
+      padding-left:20px;
+      margin:8px 0 0 0;
+      color:var(--muted);
+      line-height:1.9;
+    }
+    ul.checklist li{margin-bottom:12px;font-weight:500}
+    ul.checklist strong{color:var(--accent);font-weight:700}
+
+    .contact{
+      margin-top:14px;
+      color:var(--muted);
+      line-height:1.8;
+    }
+
+    .muted-block{
+      background:linear-gradient(180deg,#fbfdfe,#f7fbfa);
+      border-radius:12px;
+      padding:16px;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      h1.hero{font-size:36px}
+      .stat .num{font-size:30px}
+    }
+
+    @media (max-width:420px){
+      .card{padding:20px}
+      h1.hero{font-size:32px}
+      h2.section{font-size:22px}
+      p.lead{font-size:16px}
+      .stat .num{font-size:26px}
+    }
+    
+    
+
+    
+    
+    
+
+   
+
+    
+  
+
+
+
+
+    /* footer */
+    footer.site-footer {
+      margin-top: 38px;
+      background: var(--dark-footer);
+      color: #dcdcdc;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 13px;
+    }
+  </style>  
+
+    </head>
+    <body>
+         <header class="site-header" role="banner">
+    <h1 class="brand" style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">EbRo-Shop</h1>
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="./index.html">Home</a>
+      <a  href="./Menu.html">Menu</a>
+      <a style="color: #222; font-weight: 700;" href="#">About</a>
+      <a href="./Contact.html">contact</a>
+      <a href="./order.html">Order</a>
+    </nav>
+  </header>
+
+  <div style="--bg:#f2f7fa; /* light sky background */
+      --card:#ffffff;
+      --muted:#666f78;
+      --accent:#0d4a7e; /* blue accent */
+      --stat-bg:#f5f8fa;
+      --radius:14px;">
+  <div style=" font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial;
+      background:linear-gradient(90deg,var(--bg),#ffffff 50%);
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px 16px;
+      display:flex;
+      justify-content:center;">
+         <main class="card" role="main">
+    <h1 class="hero">About Ebro‑Shop</h1>
+
+    <div class="grid">
+      <div>
+        <h2 class="section">Our Mission</h2>
+        <p class="lead">At <strong>Ebro‑Shop</strong>, our mission is to make online shopping in Ethiopia simple, secure, and affordable prices. We provide a seamless digital marketplace that connects customers with high‑quality products at unbeatable prices. Whether you’re looking for electronics, fashion, home essentials, or personal care products, we’re committed to ensuring a smooth and enjoyable shopping experience every time.</p>
+        <h2 class="section">What We Offer</h2>
+        <ul class="checklist">
+          <li><strong>Wide Product Range:</strong> From daily essentials to exclusive deals, Ebro‑Shop offers thousands of products across multiple categories.</li>
+          <li><strong>Trusted Quality:</strong> Every product is carefully reviewed to meet our strict quality standards.</li>
+          <li><strong>Fast Delivery:</strong> Reliable delivery service that gets your order to your doorstep quickly and safely.</li>
+          <li><strong>Secure Payments:</strong> Multiple secure payment options including Cash, bank transfers and Telebirr transfers.</li>
+          <li><strong>Customer Support:</strong> Our dedicated support team is help you with your orders and inquiries.</li>
+        </ul>
+
+        <h2 class="section">Our Story</h2>
+        <p class="lead">Ebro‑Shop started with a simple idea — to bring convenience and trust to online shopping in Ethiopia. What began as a small local e‑commerce project quickly grew into one of the most loved digital marketplaces. We’ve helped thousands of customers find what they need with confidence, transparency, and affordability.</p>
+
+        <p class="lead">Every product we add and every partnership we form is guided by our mission to make quality products accessible to everyone, everywhere in the country.</p>
+
+        <h2 class="section">Our Vision</h2>
+        <p class="lead">To be Ethiopia’s most trusted online marketplace — empowering people to shop smarter, live better, and connect with a modern digital economy.</p>
+      </div>
+
+      <aside>
+        <h2 class="section">Our Impact</h2>
+        <div class="stats">
+          <div class="stat">
+            <div class="num">1,000+</div>
+            <div class="label">Products Available</div>
+          </div>
+
+          <div class="stat">
+            <div class="num">500+</div>
+            <div class="label">Happy Customers</div>
+          </div>
+
+          <div class="stat">
+            <div class="num">5+</div>
+            <div class="label">Partner Brands</div>
+          </div>
+        </div>
+
+        <h2 class="section">Our Values</h2>
+        <div class="values">
+          <div class="value">
+            <h3>Customer First</h3>
+            <p>We always prioritize customer satisfaction above all else.</p>
+          </div>
+
+          <div class="value">
+            <h3>Integrity</h3>
+            <p>Honesty and transparency guide every transaction and partnership.</p>
+          </div>
+
+          <div class="value">
+            <h3>Innovation</h3>
+            <p>We continuously improve our platform and services to meet evolving customer needs.</p>
+          </div>
+
+          <div class="value">
+            <h3>Community</h3>
+            <p>We support local businesses and promote digital transformation within Ethiopia.</p>
+          </div>
+        </div>
+
+        <h2 class="section">Contact Information</h2>
+        <div class="muted-block contact">
+          For inquiries or support, please contact us via our <a href="./Contact.html" style="color:var(--accent);font-weight:700;text-decoration:underline">Contact Us page</a>.
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+  </div>
+  </div>
+
+ <footer class="site-footer" role="contentinfo">
+    © 2025 EbRo-Shop. All rights reserved. <a style="color: #0e91f6; font-weight: 900;"
+      href="./contactDeveloper.html">Contact-Developer</a>
+  </footer>
+
+    </body>
+</html>

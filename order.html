@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order</title>
+  <style>
+
+     :root {
+      --cyan: #09af6f;
+      --lime: #d9f200;
+      --muted: #f6f3f3;
+      --card-border: #efebef;
+      --dark-footer: #2f2f2f;
+      --accent: #8b1f3a;
+      --text: #222;
+      --radius: 6px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header.site-header {
+      background: var(--cyan);
+      text-align: center;
+      padding: 26px 16px 44px;
+      position: relative;
+      box-shadow: inset 0 -3px rgba(0, 0, 0, 0.02);
+    }
+
+    header .brand {
+      font-weight: 700;
+      font-size: 32px;
+      color: #fff;
+      margin: 0;
+    }
+
+    nav.main-nav {
+      margin-top: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      font-size: 14px;
+    }
+
+    nav.main-nav a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      opacity: 0.95;
+    }
+
+    /* thin lime separator like screenshot */
+    .lime-sep {
+      height: 10px;
+      background: linear-gradient(90deg, var(--lime), rgba(255, 255, 255, 0) 60%);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+    }
+
+    /* Container */
+    .container {
+      max-width: 980px;
+      margin: 28px auto;
+      padding: 0 18px;
+    }
+
+    /* Welcome */
+    .hero {
+      background: #fff;
+      border-radius: 4px;
+      padding: 26px 22px;
+      margin-bottom: 22px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02) inset;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .hero p {
+      margin: 0;
+      color: #666;
+    }
+
+    /* Another lime separator */
+    .lime-sep-thin {
+      height: 8px;
+      background: var(--lime);
+      margin-bottom: 26px;
+      border-radius: 2px;
+      opacity: 0.95;
+    }
+
+    /* Menu heading */
+    .menu-heading {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 20px;
+      margin: 10px 0 16px;
+    }
+
+    /* Menu card */
+    .menu-card {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 14px;
+      background: linear-gradient(180deg, #fff, #fafafa);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+      overflow: hidden;
+    }
+
+    .menu-card img.thumb {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0;
+      border: 1px solid #eee;
+    }
+
+    .menu-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .menu-title {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+
+    .menu-desc {
+      color: #6b6b6b;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .menu-price {
+      font-weight: 700;
+      margin-right: 12px;
+    }
+
+    /* order button */
+    .order-btn {
+      background: #196b51;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+      transition: transform .06s ease;
+    }
+
+    .order-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    /* footer */
+    footer.site-footer {
+      margin-top: 38px;
+      background: var(--dark-footer);
+      color: #dcdcdc;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 13px;
+    }
+
+    /* small screens */
+    @media (max-width:640px) {
+      header .brand {
+        font-size: 22px;
+      }
+
+      nav.main-nav {
+        gap: 12px;
+        font-size: 13px;
+        flex-wrap: wrap;
+        justify-content: center
+      }
+
+      .menu-card {
+        flex-direction: row;
+        align-items: center
+      }
+
+      .menu-card img.thumb {
+        width: 64px;
+        height: 64px
+      }
+    }
+  
+    
+    
+
+    
+    
+    
+    
+  
+  
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--primary);color:#fff;text-decoration:none}
+    form input, form textarea{width:100%;padding:10px;margin-top:8px;border:1px solid #ddd;border-radius:6px}
+    form button{margin-top:10px}
+ 
+  </style>
+   
+
+    </head>
+    <body>
+
+      <header class="site-header" role="banner">
+    <h1 class="brand" style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">EbRo-Shop</h1>
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="./index.html">Home</a>
+      <a href="./Menu.html">Menu</a>
+      <a href="./About.html">About</a>
+      <a href="./Contact.html">contact</a>
+      <a style="color: #222; font-weight: 700;" href="#">Order</a>
+    </nav>
+  </header>
+
+
+  <div style="font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:var(--bg);color:#123">
+
+    <div style="--primary:#2b7a78;--accent:#f6bc52;--bg:#f7faf9;--card:#ffffff;text-align: center;">
+      <h2><b>If you pay by ⏬</b></h2>
+      <p><a href="./cash.html" target="_blank" rel="noopener">
+          <button class="order-btn" type="button">Cash</button>
+        </a></p>  
+      <p><a href="./Bank.html" target="_blank" rel="noopener">
+          <button class="order-btn" type="button">Bank</button>
+        </a></p>
+        <p><a href="./Telebirr.html" target="_blank" rel="noopener">
+          <button class="order-btn" type="button">Telebirr</button>
+        </a>
+        </p>
+      </div> 
+  
+
+
+  </div>
+
+   
+
+    </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        
+  :root {
+      --cyan: #09af6f;
+      --lime: #d9f200;
+      --muted: #f6f3f3;
+      --card-border: #efebef;
+      --dark-footer: #2f2f2f;
+      --accent: #8b1f3a;
+      --text: #222;
+      --radius: 6px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header.site-header {
+      background: var(--cyan);
+      text-align: center;
+      padding: 26px 16px 44px;
+      position: relative;
+      box-shadow: inset 0 -3px rgba(0, 0, 0, 0.02);
+    }
+
+    header .brand {
+      font-weight: 700;
+      font-size: 32px;
+      color: #fff;
+      margin: 0;
+    }
+
+    nav.main-nav {
+      margin-top: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      font-size: 14px;
+    }
+
+    nav.main-nav a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      opacity: 0.95;
+    }
+
+    /* thin lime separator like screenshot */
+    .lime-sep {
+      height: 10px;
+      background: linear-gradient(90deg, var(--lime), rgba(255, 255, 255, 0) 60%);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+    }
+
+    /* Container */
+    .container {
+      max-width: 980px;
+      margin: 28px auto;
+      padding: 0 18px;
+    }
+
+    /* Welcome */
+    .hero {
+      background: #fff;
+      border-radius: 4px;
+      padding: 26px 22px;
+      margin-bottom: 22px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02) inset;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .hero p {
+      margin: 0;
+      color: #666;
+    }
+
+    /* Another lime separator */
+    .lime-sep-thin {
+      height: 8px;
+      background: var(--lime);
+      margin-bottom: 26px;
+      border-radius: 2px;
+      opacity: 0.95;
+    }
+
+    /* Menu heading */
+    .menu-heading {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 20px;
+      margin: 10px 0 16px;
+    }
+
+    /* Menu card */
+    .menu-card {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 14px;
+      background: linear-gradient(180deg, #fff, #fafafa);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+      overflow: hidden;
+    }
+
+    .menu-card img.thumb {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0;
+      border: 1px solid #eee;
+    }
+
+    .menu-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .menu-title {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+
+    .menu-desc {
+      color: #6b6b6b;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .menu-price {
+      font-weight: 700;
+      margin-right: 12px;
+    }
+
+    /* order button */
+    .order-btn {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+      transition: transform .06s ease;
+    }
+
+    .order-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    /* footer */
+    footer.site-footer {
+      margin-top: 38px;
+      background: var(--dark-footer);
+      color: #dcdcdc;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 13px;
+    }
+
+    /* small screens */
+    @media (max-width:640px) {
+      header .brand {
+        font-size: 22px;
+      }
+    }
+      nav.main-nav {
+        gap: 12px;
+        font-size: 13px;
+        flex-wrap: wrap;
+        justify-content: center
+      }
+
+      .menu-card {
+        flex-direction: row;
+        align-items: center
+      }
+
+      .menu-card img.thumb {
+        width: 64px;
+        height: 64px
+      }
+       
+      .social-links a {
+            font-size: 3em; /* Makes the icon large */
+            margin: 0 15px;
+            color: #333; /* Default icon color */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #007bff; /* Color change on hover */
+        }
+        /* Specific colors for better branding */
+    
+    </style>
+
+</head>
+<body>
+
+      <header class="site-header" role="banner">
+    <h1 class="brand" style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">EbRo-Shop</h1>
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="./index.html">Home</a>
+      <a  href="./index.html">Menu</a>
+      <a href="./About.html">About</a>
+      <a style="color: #222; font-weight: 700;" href="#">contact</a>
+      <a href="./order.html">Order</a>
+    </nav>
+  </header>
+
+  
+  <div style="font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;" >
+    <h1>Welcome to Developer section🙌 </h1>
+    <p style="line-height: 1.0;"> 
+      I would love to hear some questions from you like if you want to build a <b style="color: #0421ff;">website</b>,<br>
+       <b style="color: #0421ff;">mobile apps</b> and <b style="color: #0421ff;">need help</b> from me click on any of the icons below to find me on social media.</p>
+
+    <div class="social-links">
+        <a href="https://fb.com/l/6lp1kJRRR" target="_blank" title="Facebook Profile">
+            <i style="color: #0e60b1;"  class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.t.me/Rebyi43" target="_blank" title="telegram profile">
+            <i style="color: #0088cc;" class="fab fa-telegram"></i>
+        </a>
+        <a href="#" target="_blank" title="WhatsApp">
+            <i style="color: #25d366; " class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    </div>
+
+</body>
+</html>
